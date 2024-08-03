@@ -401,8 +401,6 @@ public class Main {
   }}
 
   // pattern 16 - hollow rhombus
-  ****************
-
   int n = 5;for(
   int i = 1;i<=n;i++)
   {
