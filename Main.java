@@ -528,3 +528,48 @@ public class Main {
     System.out.println(circumferenceCircle(a));
   }
 }
+
+
+
+//GCD pf two numbers
+public class Main {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+   int x = sc.nextInt();
+   int y = sc.nextInt();
+   int GCD = 1;
+   for(int i=1;i<=x&&i<=y;i++)
+   {
+       if(x%i==0 && y%i==0)
+       {
+           GCD=i;
+       }
+   }
+   System.out.println(GCD);
+  }
+}
+
+
+//factorial 
+
+import java.io.*;
+import java.util.*;
+public class Main {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    int n = sc.nextInt();
+    int a = 0;
+    int b=1;
+    System.out.print(a+" ");
+    if(n>1)
+    {
+        for(int i=2;i<=n;i++)
+        {
+            System.out.print(b+" ");
+            int temp =b;
+            b= a+b;
+            a=temp;
+        }
+    }
+  }
+}
